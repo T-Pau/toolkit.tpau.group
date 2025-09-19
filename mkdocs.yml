@@ -1,11 +1,6 @@
 site_name: '&nbsp;'
-<<<<<<< HEAD
-site_url: https://accelerate.tpau.group/
-repo_url: https://github.com/T-Pau/Accelerate
-=======
 site_url: https://toolkit.tpau.group/
 repo_url: https://github.com/T-Pau/Toolkit
->>>>>>> bd0a15b (Flesh out.)
 copyright: ©2025 Dieter Baron
 extra:
   generator: false
@@ -33,26 +28,10 @@ nav:
   - index.md
   - Tutorials:
     - Tutorials/index.md
-<<<<<<< HEAD
-    - Tutorials/Hello-World-C64.md
-=======
->>>>>>> bd0a15b (Flesh out.)
   - How-To Guides:
     - How-To-Guides/index.md
   - Reference: 
     - Reference/index.md
-<<<<<<< HEAD
-    - Reference/Assembler-Source-File.md
-    - Reference/Expressions.md
-    - Reference/Structured-Values.md
-    - Reference/Target-Definition.md
-    - Reference/CPU-Definition.md
-  - Explanations:
-    - Explanations/index.md
-    - Explanations/Introduction.md
-    - Explanations/Rationale.md
-    - Explanations/Design-Goals.md
-=======
     - Reference/convert-bitmap.md
     - Reference/convert-characters.md
     - Reference/convert-charset.md
@@ -66,6 +45,5 @@ nav:
     - Reference/parallel-struct.md
   - Explanations:
     - Explanations/index.md
->>>>>>> bd0a15b (Flesh out.)
   - License.md
   - Repository: 'https://github.com/T-Pau/Toolkit/'
