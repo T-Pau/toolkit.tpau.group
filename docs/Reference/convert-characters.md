@@ -84,6 +84,7 @@ This describes the charsets to be created.
 
 <code>section <em>section</em></code>
 : Section to place charset object in. (default: global `section`)
+
 <code>width <em>width</em></code>
 : Characters are `width` logical pixels wide (default: 8).
 
