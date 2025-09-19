@@ -5,7 +5,7 @@ title: Toolkit
 
 Toolkit is a collection of scripts, Python classes, assembler routines and build rules for developing programs for 8- and 16-bit computers. 
 
-It is designed to be used with [Accelerate](accelerate.tpau.group) and [fast-ninja](fast-ninja.tpau.group).
+It is designed to be used with [Accelerate](https://accelerate.tpau.group) and [fast-ninja](https://fast-ninja.tpau.group).
 
 ## Why Use Toolkit?
 
