@@ -5,22 +5,22 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://toolkit.tpau.group/Explanations/" rel="canonical">
-<link href="../Reference/Classes/Palette/" rel="prev"/>
-<link href="../License/" rel="next"/>
-<link href="../assets/images/favicon.ico" rel="icon"/>
+<link href="https://toolkit.tpau.group/Reference/Scripts/parallel-struct/" rel="canonical">
+<link href="../encode-colors/" rel="prev"/>
+<link href="../../Classes/" rel="next"/>
+<link href="../../../assets/images/favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.3" name="generator"/>
-<title>Explanations -  </title>
-<link href="../assets/stylesheets/main.d7758b05.min.css" rel="stylesheet"/>
-<link href="../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
-<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-<link href="../assets/stylesheets/extra-style.ggg46_h8.min.css" rel="stylesheet"/></head>
+<title>parallel-struct -  </title>
+<link href="../../../assets/stylesheets/main.d7758b05.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../../assets/stylesheets/extra-style.ggg46_h8.min.css" rel="stylesheet"/></head>
 <body data-md-color-accent="indigo" data-md-color-primary="custom" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#explanations">
+<a class="md-skip" href="#create-parallel-tables-from-list-of-structures">
           Skip to content
         </a>
 </div>
@@ -28,7 +28,7 @@
 </div>
 <header class="md-header md-header--shadow" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label=" " class="md-header__button md-logo" data-md-component="logo" href=".." title="&amp;nbsp;">
+<a aria-label=" " class="md-header__button md-logo" data-md-component="logo" href="../../.." title="&amp;nbsp;">
 <img alt="icon" src="/assets/images/icon.svg"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
@@ -44,7 +44,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Explanations
+              parallel-struct
             
           </span>
 </div>
@@ -100,8 +100,8 @@
 <div class="md-sidebar__inner">
 <nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--integrated" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label=" " class="md-nav__button md-logo" data-md-component="logo" href=".." title="&amp;nbsp;">
-<img alt="logo" src="../assets/images/tpau.svg"/>
+<a aria-label=" " class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="&amp;nbsp;">
+<img alt="logo" src="../../../assets/images/tpau.svg"/>
 </a>
      
   </label>
@@ -117,7 +117,7 @@
 </div>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="..">
+<a class="md-nav__link" href="../../..">
 <span class="md-ellipsis">
     Toolkit
     
@@ -127,7 +127,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../Tutorials/">
+<a class="md-nav__link" href="../../../Tutorials/">
 <span class="md-ellipsis">
     Tutorials
     
@@ -146,7 +146,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../How-To-Guides/">
+<a class="md-nav__link" href="../../../How-To-Guides/">
 <span class="md-ellipsis">
     How-To Guides
     
@@ -162,10 +162,10 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../Reference/">
+<a class="md-nav__link" href="../../">
 <span class="md-ellipsis">
     Reference
     
@@ -175,16 +175,16 @@
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="true" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_4">
 <span class="md-nav__icon md-icon"></span>
             Reference
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../Reference/Scripts/">
+<a class="md-nav__link" href="../">
 <span class="md-ellipsis">
     Scripts
     
@@ -194,14 +194,14 @@
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="true" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_4_2">
 <span class="md-nav__icon md-icon"></span>
             Scripts
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../Reference/Scripts/convert-bitmaps/">
+<a class="md-nav__link" href="../convert-bitmaps/">
 <span class="md-ellipsis">
     convert-bitmaps
     
@@ -209,7 +209,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../Reference/Scripts/convert-characters/">
+<a class="md-nav__link" href="../convert-characters/">
 <span class="md-ellipsis">
     convert-characters
     
@@ -217,7 +217,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../Reference/Scripts/convert-charset/">
+<a class="md-nav__link" href="../convert-charset/">
 <span class="md-ellipsis">
     convert-charset
     
@@ -225,7 +225,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../Reference/Scripts/convert-image/">
+<a class="md-nav__link" href="../convert-image/">
 <span class="md-ellipsis">
     convert-image
     
@@ -233,7 +233,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../Reference/Scripts/convert-markdown/">
+<a class="md-nav__link" href="../convert-markdown/">
 <span class="md-ellipsis">
     convert-markdown
     
@@ -241,7 +241,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../Reference/Scripts/convert-screens/">
+<a class="md-nav__link" href="../convert-screens/">
 <span class="md-ellipsis">
     convert-screens
     
@@ -249,7 +249,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../Reference/Scripts/convert-sprites/">
+<a class="md-nav__link" href="../convert-sprites/">
 <span class="md-ellipsis">
     convert-sprites
     
@@ -257,7 +257,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../Reference/Scripts/create-disk/">
+<a class="md-nav__link" href="../create-disk/">
 <span class="md-ellipsis">
     create-disk
     
@@ -265,7 +265,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../Reference/Scripts/create-zip/">
+<a class="md-nav__link" href="../create-zip/">
 <span class="md-ellipsis">
     create-zip
     
@@ -273,20 +273,96 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../Reference/Scripts/encode-colors/">
+<a class="md-nav__link" href="../encode-colors/">
 <span class="md-ellipsis">
     encode-colors
     
   </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../Reference/Scripts/parallel-struct/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    parallel-struct
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
     parallel-struct
     
   </span>
 </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#create-parallel-tables-from-list-of-structures">
+<span class="md-ellipsis">
+      Create parallel tables from list of structures.
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#synopsis">
+<span class="md-ellipsis">
+      Synopsis
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#description">
+<span class="md-ellipsis">
+      Description
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#supported-options">
+<span class="md-ellipsis">
+      Supported Options
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#structue-file">
+<span class="md-ellipsis">
+      Structue File
+    </span>
+</a>
+<nav aria-label="Structue File" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#settings">
+<span class="md-ellipsis">
+      Settings
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fields">
+<span class="md-ellipsis">
+      Fields
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#structures">
+<span class="md-ellipsis">
+      Structures
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -294,7 +370,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_4_3" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../Reference/Classes/">
+<a class="md-nav__link" href="../../Classes/">
 <span class="md-ellipsis">
     Python Classes
     
@@ -311,7 +387,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../Reference/Classes/Palette/">
+<a class="md-nav__link" href="../../Classes/Palette/">
 <span class="md-ellipsis">
     Palette
     
@@ -324,17 +400,17 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link md-nav__link--active" href="./">
+<a class="md-nav__link" href="../../../Explanations/">
 <span class="md-ellipsis">
     Explanations
     
   </span>
 </a>
 </div>
-<nav aria-expanded="true" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_5">
 <span class="md-nav__icon md-icon"></span>
             Explanations
@@ -344,7 +420,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../License/">
+<a class="md-nav__link" href="../../../License/">
 <span class="md-ellipsis">
     License
     
@@ -366,8 +442,71 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="explanations">Explanations</h1>
-<p>There are no articles available yet.</p>
+<h1>parallel-struct</h1>
+<h3 id="create-parallel-tables-from-list-of-structures">Create parallel tables from list of structures.</h3>
+<h2 id="synopsis">Synopsis</h2>
+<pre><code class="language-sh">parallel-struct [-M file] [-o file] [-I directory] [-s section] structs
+</code></pre>
+<h2 id="description">Description</h2>
+<p>Create tables for each field in a list of structures.</p>
+<p>It generates an assembler source file containing all the created objects.</p>
+<h2 id="supported-options">Supported Options</h2>
+<dl>
+<dt><code>-h</code>, <code>--help</code></dt>
+<dd>Show help message and exit.</dd>
+<dt><code>-M <em>file</em><code></code></code></dt>
+<dd>Write gcc-style dependency information to <code>file</code>.</dd>
+<dt><code>-o <em>file</em></code></dt>
+<dd>Write generated assembly code to <code>file</code>.</dd>
+<dt><code>-s <em>section</em></code>, <code>--section <em>section</em></code></dt>
+<dd>Put generated objects in section <code>section</code>.</dd>
+</dl>
+<h2 id="structue-file">Structue File</h2>
+<p>The structures file uses <a href="https://yaml.org">YAML</a> syntax.</p>
+<h3 id="settings">Settings</h3>
+<p>Global settings are specified in the <code>settings</code> section of the structure file.</p>
+<dl>
+<dt><code>default_string_encoding <em>encoding</em></code></dt>
+<dd>The default encoding used for string values. (default: <code>default_string_encoding</code>)</dd>
+<dt><code>include_count {yes|no}</code></dt>
+<dd>(default: <code>yes</code>)</dd>
+<dt><code>prefix string</code></dt>
+<dd>Prefix for object names. (default: empty)</dd>
+</dl>
+<h3 id="fields">Fields</h3>
+<p>The fields of the structures are defined in the <code>fields</code> section of the structure file.</p>
+<dl>
+<dt><code>default_value <em>value</em></code></dt>
+<dd>Value to use if not specified in struct.</dd>
+<dt><code>default_value_field <em>field</em></code></dt>
+<dd>If set, the default value will be taken from the named field. (default: none)</dd>
+<dt><code>default_value_prefix <em>string</em></code></dt>
+<dd>If <code>default_value_field</code> is used, prepend <code>string</code> to its value. (default: empty)</dd>
+<dt><code>default_value_postfix <em>string</em></code></dt>
+<dd>If <code>default_value_field</code> is used, append <code>string</code> to its value. (default: empty)</dd>
+<dt><code>encoding <em>encoding</em></code></dt>
+<dd>Encoding used for string values. (default: <code>default_string_encoding</code> from global settings)</dd>
+<dt><code>length <em>number</em></code></dt>
+<dd>(default: 1)</dd>
+<dt><code>nul_terminate {yes|no}</code></dt>
+<dd>If set, a NUL character will be appended to string values. (default: <code>no</code>)</dd>
+<dt><code>padding <em>padding</em></code></dt>
+<dd>(default: <code></code> for string fields, 0 for others.)</dd>
+<dt><code>type <em>type</em></code></dt>
+<dd>
+<p>(default: <code>single</code>)</p>
+<p><code>multi</code>
+:</p>
+<p><code>omit</code>
+:</p>
+<p><code>single</code>
+:</p>
+<p><code>string</code>
+:</p>
+</dd>
+</dl>
+<h3 id="structures">Structures</h3>
+<p>The actual structures are listed in the <code>structs</code> section of the structure file.</p>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
@@ -389,7 +528,7 @@
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "toc.integrate"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-<script src="../assets/javascripts/bundle.f1b6f286.min.js"></script>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
 </body>
 </html>

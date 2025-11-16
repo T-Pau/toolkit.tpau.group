@@ -32,17 +32,22 @@ nav:
     - How-To-Guides/index.md
   - Reference: 
     - Reference/index.md
-    - Reference/convert-bitmap.md
-    - Reference/convert-characters.md
-    - Reference/convert-charset.md
-    - Reference/convert-image.md
-    - Reference/convert-markdown.md
-    - Reference/convert-screens.md
-    - Reference/convert-sprites.md
-    - Reference/create-disk.md
-    - Reference/create-zip.md
-    - Reference/encode-colors.md
-    - Reference/parallel-struct.md
+    - Scripts:
+      - Reference/Scripts/index.md
+      - Reference/Scripts/convert-bitmaps.md
+      - Reference/Scripts/convert-characters.md
+      - Reference/Scripts/convert-charset.md
+      - Reference/Scripts/convert-image.md
+      - Reference/Scripts/convert-markdown.md
+      - Reference/Scripts/convert-screens.md
+      - Reference/Scripts/convert-sprites.md
+      - Reference/Scripts/create-disk.md
+      - Reference/Scripts/create-zip.md
+      - Reference/Scripts/encode-colors.md
+      - Reference/Scripts/parallel-struct.md
+    - Python Classes:
+      - Reference/Classes/index.md
+      - Reference/Classes/Palette.md
   - Explanations:
     - Explanations/index.md
   - License.md

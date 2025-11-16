@@ -4,14 +4,18 @@ title: Reference
 ---
 ## Scripts
 
-- [`convert-bitmap`](convert-bitmap.md) — Convert bitmap image to native format.
-- [`convert-characters`](convert-characters.md) — Convert images to charset and screens.
-- [`convert-charset`](convert-charset.md) — 
-- [`convert-image`](convert-image.md) — 
-- [`convert-markdown`](convert-markdown.md) — Convert markdown to HTML.
-- [`convert-screens`](convert-screens.md) — 
-- [`convert-sprites`](convert-sprites.md) — 
-- [`create-disk`](create-disk.md) — Create Commodore disk image.
-- [`create-zip`](create-zip.md) — Create zip archive.
-- [`encode-colors`](encode-colors.md) — 
-- [`parallel-struct`](parallel-struct.md) — 
+- [`convert-bitmaps`](Scripts/convert-bitmaps.md) — Convert bitmap image to native format.
+- [`convert-characters`](Scripts/convert-characters.md) — Convert images to charset and screens.
+- [`convert-charset`](Scripts/convert-charset.md) — 
+- [`convert-image`](Scripts/convert-image.md) — 
+- [`convert-markdown`](Scripts/convert-markdown.md) — Convert markdown to HTML.
+- [`convert-screens`](Scripts/convert-screens.md) — 
+- [`convert-sprites`](Scripts/convert-sprites.md) — 
+- [`create-disk`](Scripts/create-disk.md) — Create Commodore disk image.
+- [`create-zip`](Scripts/create-zip.md) — Create zip archive.
+- [`encode-colors`](Scripts/encode-colors.md) — 
+- [`parallel-struct`](Scripts/parallel-struct.md) — 
+
+## Python Classes
+
+- [`Palette`](Classes/Palette.md) — Color palette.
