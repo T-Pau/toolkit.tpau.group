@@ -18,4 +18,6 @@ title: Reference
 
 ## Python Classes
 
+- [`AssemblerOUtput`](Classes/AssemblerOutput.md) - Create assembler source files in [Accelerate](https://accelerate.tpau.group/) format.
+- [`AtomicOutput`](Classes/AtomicOutput.md) - Create output file only if no errors occurred.
 - [`Palette`](Classes/Palette.md) — Color palette.
