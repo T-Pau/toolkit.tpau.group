@@ -1,0 +1,1710 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://toolkit.tpau.group/Reference/Classes/AssemblerOutput/" rel="canonical">
+<link href="../" rel="prev"/>
+<link href="../AtomicOutput/" rel="next"/>
+<link href="../../../assets/images/favicon.ico" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.3" name="generator"/>
+<title>AssemblerOutput -  </title>
+<link href="../../../assets/stylesheets/main.d7758b05.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link href="../../../assets/_mkdocstrings.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../../assets/stylesheets/extra-style.007l775k.min.css" rel="stylesheet"/></head>
+<body data-md-color-accent="indigo" data-md-color-primary="custom" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#AssemblerOutput">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label=" " class="md-header__button md-logo" data-md-component="logo" href="../../.." title="&amp;nbsp;">
+<img alt="icon" src="/assets/images/icon.svg"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Toolkit <span class="md-header__sub_topic">— Retro Development Toolkit</span>
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              AssemblerOutput
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/T-Pau/Toolkit" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--integrated" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label=" " class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="&amp;nbsp;">
+<img alt="logo" src="../../../assets/images/tpau.svg"/>
+</a>
+     
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/T-Pau/Toolkit" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
+    Toolkit
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../Tutorials/">
+<span class="md-ellipsis">
+    Tutorials
+    
+  </span>
+</a>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../How-To-Guides/">
+<span class="md-ellipsis">
+    How-To Guides
+    
+  </span>
+</a>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            How-To Guides
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../">
+<span class="md-ellipsis">
+    Reference
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../Scripts/">
+<span class="md-ellipsis">
+    Scripts
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+            Scripts
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Scripts/convert-bitmaps/">
+<span class="md-ellipsis">
+    convert-bitmaps
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Scripts/convert-characters/">
+<span class="md-ellipsis">
+    convert-characters
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Scripts/convert-charset/">
+<span class="md-ellipsis">
+    convert-charset
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Scripts/convert-image/">
+<span class="md-ellipsis">
+    convert-image
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Scripts/convert-markdown/">
+<span class="md-ellipsis">
+    convert-markdown
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Scripts/convert-screens/">
+<span class="md-ellipsis">
+    convert-screens
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Scripts/convert-sprites/">
+<span class="md-ellipsis">
+    convert-sprites
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Scripts/create-disk/">
+<span class="md-ellipsis">
+    create-disk
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Scripts/create-zip/">
+<span class="md-ellipsis">
+    create-zip
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Scripts/encode-colors/">
+<span class="md-ellipsis">
+    encode-colors
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Scripts/parallel-struct/">
+<span class="md-ellipsis">
+    parallel-struct
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_4_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../">
+<span class="md-ellipsis">
+    Python Classes
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_4_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_3">
+<span class="md-nav__icon md-icon"></span>
+            Python Classes
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    AssemblerOutput
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    AssemblerOutput
+    
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#AssemblerOutput">
+<span class="md-ellipsis">
+      AssemblerOutput
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#AssemblerOutput.AssemblerOutput">
+<span class="md-ellipsis">
+      AssemblerOutput
+    </span>
+</a>
+<nav aria-label="AssemblerOutput" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#AssemblerOutput.AssemblerOutput.begin_object">
+<span class="md-ellipsis">
+      begin_object
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#AssemblerOutput.AssemblerOutput.byte">
+<span class="md-ellipsis">
+      byte
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#AssemblerOutput.AssemblerOutput.bytes">
+<span class="md-ellipsis">
+      bytes
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#AssemblerOutput.AssemblerOutput.bytes_object">
+<span class="md-ellipsis">
+      bytes_object
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#AssemblerOutput.AssemblerOutput.combine_names">
+<span class="md-ellipsis">
+      combine_names
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#AssemblerOutput.AssemblerOutput.comment">
+<span class="md-ellipsis">
+      comment
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#AssemblerOutput.AssemblerOutput.constant">
+<span class="md-ellipsis">
+      constant
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#AssemblerOutput.AssemblerOutput.data">
+<span class="md-ellipsis">
+      data
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#AssemblerOutput.AssemblerOutput.data_object">
+<span class="md-ellipsis">
+      data_object
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#AssemblerOutput.AssemblerOutput.empty_line">
+<span class="md-ellipsis">
+      empty_line
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#AssemblerOutput.AssemblerOutput.end_object">
+<span class="md-ellipsis">
+      end_object
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#AssemblerOutput.AssemblerOutput.header">
+<span class="md-ellipsis">
+      header
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#AssemblerOutput.AssemblerOutput.label">
+<span class="md-ellipsis">
+      label
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#AssemblerOutput.AssemblerOutput.parts">
+<span class="md-ellipsis">
+      parts
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#AssemblerOutput.AssemblerOutput.pre_else">
+<span class="md-ellipsis">
+      pre_else
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#AssemblerOutput.AssemblerOutput.pre_end">
+<span class="md-ellipsis">
+      pre_end
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#AssemblerOutput.AssemblerOutput.pre_if">
+<span class="md-ellipsis">
+      pre_if
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#AssemblerOutput.AssemblerOutput.section">
+<span class="md-ellipsis">
+      section
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#AssemblerOutput.AssemblerOutput.string">
+<span class="md-ellipsis">
+      string
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#AssemblerOutput.AssemblerOutput.visibility">
+<span class="md-ellipsis">
+      visibility
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#AssemblerOutput.AssemblerOutput.word">
+<span class="md-ellipsis">
+      word
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../AtomicOutput/">
+<span class="md-ellipsis">
+    AtomicOutput
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Palette/">
+<span class="md-ellipsis">
+    Palette
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../Explanations/">
+<span class="md-ellipsis">
+    Explanations
+    
+  </span>
+</a>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            Explanations
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../License/">
+<span class="md-ellipsis">
+    License
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="https://github.com/T-Pau/Toolkit/">
+<span class="md-ellipsis">
+    Repository
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1>AssemblerOutput</h1>
+<div class="doc doc-object doc-module">
+<a id="AssemblerOutput"></a>
+<div class="doc doc-contents first">
+<p>This module creates assembler source files in <a href="https://accelerate.tpau.group/">Accelerate</a> format.</p>
+<div class="doc doc-children">
+<div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="AssemblerOutput.AssemblerOutput">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code> <code class="highlight language-python"><span class="n">AssemblerOutput</span><span class="p">(</span><span class="n">file</span><span class="p">)</span></code>
+</h2>
+<div class="doc doc-contents">
+<p>Create output files in Accelerate assembler format.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>file</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The output file handle.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="typing.IO">IO</span>[<span title="typing.Any">Any</span>]</code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="doc doc-children">
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="AssemblerOutput.AssemblerOutput.begin_object">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">begin_object</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">section</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">visibility</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">alignment</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Begin a new object.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>name</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The name of the object.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span></code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>section</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The section to place the object in. If <code>None</code>, place in current section.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span> | None</code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>visibility</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The visibility of the object.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span> | None</code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>alignment</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The alignment of the object.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="int">int</span> | None</code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="AssemblerOutput.AssemblerOutput.byte">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">byte</span><span class="p">(</span><span class="n">value</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Add a byte value as <code>.data</code> to current object.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>value</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The byte value.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="typing.Any">Any</span></code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="AssemblerOutput.AssemblerOutput.bytes">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="nb">bytes</span><span class="p">(</span><span class="n">bytes_array</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Add a byte array as <code>.data</code> to current object.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>bytes_array</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The byte array.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><a class="autorefs autorefs-internal" href="#AssemblerOutput.AssemblerOutput.bytes" title="            bytes(bytes_array) (AssemblerOutput.AssemblerOutput.bytes)">bytes</a></code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="AssemblerOutput.AssemblerOutput.bytes_object">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">bytes_object</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">bytes_array</span><span class="p">,</span> <span class="n">section</span><span class="o">=</span><span class="s1">'data'</span><span class="p">,</span> <span class="n">visibility</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">alignment</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Create an object containing a byte array.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>name</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The name of the object.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span></code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>bytes_array</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The byte array.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><a class="autorefs autorefs-internal" href="#AssemblerOutput.AssemblerOutput.bytes" title="            bytes(bytes_array) (AssemblerOutput.AssemblerOutput.bytes)">bytes</a></code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>section</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The section to place the object in. If <code>None</code>, place in current section.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span></code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>'data'</code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>visibility</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The visibility of the object.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span> | None</code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>alignment</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The alignment of the object.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="int">int</span> | None</code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="AssemblerOutput.AssemblerOutput.combine_names">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">combine_names</span><span class="p">(</span><span class="n">prefix</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Combine a prefix and name (either of which can be None) into a single name.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>prefix</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The prefix.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span> | None</code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>name</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The name.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span> | None</code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RETURNS</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-returns-annotation">
+<code><span title="str">str</span></code>
+</span>
+</td>
+<td class="doc-returns-details">
+<div class="doc-md-description">
+<p>The combined name.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RAISES</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-raises-annotation">
+<code><span title="RuntimeError">RuntimeError</span></code>
+</span>
+</td>
+<td class="doc-raises-details">
+<div class="doc-md-description">
+<p>If both prefix and name are None.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="AssemblerOutput.AssemblerOutput.comment">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">comment</span><span class="p">(</span><span class="n">comment</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Add a comment line.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>comment</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The comment text.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span></code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="AssemblerOutput.AssemblerOutput.constant">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">constant</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Define a constant.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>name</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The name of the constant.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span></code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>value</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The value of the constant.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="typing.Any">Any</span></code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="AssemblerOutput.AssemblerOutput.data">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">data</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">line_length</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Add data as <code>.data</code> to current object.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>value</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The data value or list of values.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="typing.Any">Any</span></code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>encoding</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The encoding to use for strings.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span> | None</code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>line_length</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The number of values per line.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="int">int</span></code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>16</code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="AssemblerOutput.AssemblerOutput.data_object">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">data_object</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">section</span><span class="o">=</span><span class="s1">'data'</span><span class="p">,</span> <span class="n">visibility</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">alignment</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Create an object containing data.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>name</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The name of the object.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span></code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>data</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The data.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="typing.Any">Any</span></code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>section</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The section to place the object in.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span></code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>'data'</code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>visibility</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The visibility of the object.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span> | None</code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>alignment</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The alignment of the object.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="int">int</span> | None</code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="AssemblerOutput.AssemblerOutput.empty_line">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">empty_line</span><span class="p">()</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Add an empty line to the output.</p>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="AssemblerOutput.AssemblerOutput.end_object">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">end_object</span><span class="p">()</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>End the current object.</p>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="AssemblerOutput.AssemblerOutput.header">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">header</span><span class="p">(</span><span class="n">input_file</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Add standard file header comment.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>input_file</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The input file name, if any.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span> | None</code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="AssemblerOutput.AssemblerOutput.label">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">label</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">visibility</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Add a label.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>name</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The name of the label.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span></code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>visibility</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The visibility of the label.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span> | None</code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="AssemblerOutput.AssemblerOutput.parts">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">parts</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">parts</span><span class="p">,</span> <span class="n">include_count</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">include_index</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Create multiple objects from parts.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>name</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The base name of the objects.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span></code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>parts</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The data for each part.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="list">list</span></code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>include_count</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>Whether to create an object with the count of parts.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="bool">bool</span></code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>True</code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>include_index</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>Whether to create an index object referencing each part.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="bool">bool</span></code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>True</code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>names</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>Optional list of name suffixes for the parts. If not provided, parts are named by their index.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="list">list</span> | None</code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="AssemblerOutput.AssemblerOutput.pre_else">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">pre_else</span><span class="p">()</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Add a preprocessor else directive.</p>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="AssemblerOutput.AssemblerOutput.pre_end">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">pre_end</span><span class="p">()</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Add a preprocessor end directive.</p>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="AssemblerOutput.AssemblerOutput.pre_if">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">pre_if</span><span class="p">(</span><span class="n">predicate</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Add a preprocessor if directive.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>predicate</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The predicate for the if directive.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span></code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="AssemblerOutput.AssemblerOutput.section">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">section</span><span class="p">(</span><span class="n">section</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Change current section.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>section</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The section name.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span></code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="AssemblerOutput.AssemblerOutput.string">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">string</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">nul_terminate</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Add a string as <code>.data</code> to current object.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>value</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The string value.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span></code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>encoding</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The encoding to use for the string.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span> | None</code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>nul_terminate</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>Whether to add a NUL terminator.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="bool">bool</span></code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>False</code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="AssemblerOutput.AssemblerOutput.visibility">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">visibility</span><span class="p">(</span><span class="n">visibility</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Change current visibility.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>visibility</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The visibility level.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span></code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="AssemblerOutput.AssemblerOutput.word">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">word</span><span class="p">(</span><span class="n">value</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Add a word value as <code>.data</code> to current object.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>value</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The word value.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="typing.Any">Any</span></code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      ©2025 Dieter Baron
+    </div>
+</div>
+<div class="md-tpau"><a href="https://tpau.group/"><img alt="T'Pau" src="/assets/images/tpau.svg"/></a></div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+</body>
+</html>

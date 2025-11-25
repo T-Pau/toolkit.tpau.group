@@ -11,7 +11,7 @@ The specification file uses [YAML](https://yaml.org) syntax.
 ### Global Directives
 
 `bitmaps`
-: List of [bitmap definitions](#bitmap_directives) describing the images to convert. (required)
+: List of [bitmap definitions](#bitmap-directives) describing the images to convert. (required)
 
 `runlength-encode yes|no`
 : Wether to runlength encode components (default: `yes`)
@@ -25,7 +25,7 @@ The specification file uses [YAML](https://yaml.org) syntax.
 ### Bitmap Directives
 
 `components`
-: Map of [component definitions](#component_directives) describing each component.
+: Map of [component definitions](#component-directives) describing each component.
 
 <code>file <em>name</em></code>
 : name of image file (required)

@@ -54,16 +54,7 @@ Global settings are specified in the `settings` section of the structure file.
 The fields of the structures are defined in the `fields` section of the structure file.
 
 <code>default_value <em>value</em></code>
-: Value to use if not specified in struct.
-
-<code>default_value_field <em>field</em></code>
-: If set, the default value will be taken from the named field. (default: none)
-
-<code>default_value_prefix <em>string</em></code>
-: If `default_value_field` is used, prepend `string` to its value. (default: empty)
-
-<code>default_value_postfix <em>string</em></code>
-: If `default_value_field` is used, append `string` to its value. (default: empty)
+: Value to use if not specified in struct. Values of other fields can be used with the syntax <code>{{<em>field</em>}}</code>. Due to YAML syntax rules, if it starts with a field reference, the default value has to be enclosed in `"`. (default: none)
 
 <code>encoding <em>encoding</em></code>
 : Encoding used for string values. (default: `default_string_encoding` from global settings)

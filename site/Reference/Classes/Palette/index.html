@@ -6,21 +6,22 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://toolkit.tpau.group/Reference/Classes/Palette/" rel="canonical">
-<link href="../" rel="prev"/>
+<link href="../AtomicOutput/" rel="prev"/>
 <link href="../../../Explanations/" rel="next"/>
 <link href="../../../assets/images/favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.3" name="generator"/>
 <title>Palette -  </title>
 <link href="../../../assets/stylesheets/main.d7758b05.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link href="../../../assets/_mkdocstrings.css" rel="stylesheet"/>
 <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-<link href="../../../assets/stylesheets/extra-style.ggg46_h8.min.css" rel="stylesheet"/></head>
+<link href="../../../assets/stylesheets/extra-style.007l775k.min.css" rel="stylesheet"/></head>
 <body data-md-color-accent="indigo" data-md-color-primary="custom" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#palette">
+<a class="md-skip" href="#Palette">
           Skip to content
         </a>
 </div>
@@ -310,6 +311,22 @@
             Python Classes
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../AssemblerOutput/">
+<span class="md-ellipsis">
+    AssemblerOutput
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../AtomicOutput/">
+<span class="md-ellipsis">
+    AtomicOutput
+    
+  </span>
+</a>
+</li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
@@ -332,7 +349,14 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#palette">
+<a class="md-nav__link" href="#Palette">
+<span class="md-ellipsis">
+      Palette
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#Palette.Palette">
 <span class="md-ellipsis">
       Palette
     </span>
@@ -340,70 +364,91 @@
 <nav aria-label="Palette" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#palettecolors-namesnone">
+<a class="md-nav__link" href="#Palette.Palette.__contains__">
 <span class="md-ellipsis">
-      Palette(colors, names=None)
+      __contains__
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#color-in-palette-bool">
+<a class="md-nav__link" href="#Palette.Palette.__copy__">
 <span class="md-ellipsis">
-      color in palette -&gt; bool
+      __copy__
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#palettecolor-int-none">
+<a class="md-nav__link" href="#Palette.Palette.__getitem__">
 <span class="md-ellipsis">
-      palette[color] -&gt; int | None
+      __getitem__
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#lenpalette-int">
+<a class="md-nav__link" href="#Palette.Palette.__len__">
 <span class="md-ellipsis">
-      len(palette) -&gt; int
+      __len__
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#paletteadd_colorscolors">
+<a class="md-nav__link" href="#Palette.Palette.add_colors">
 <span class="md-ellipsis">
-      palette.add_colors(colors)
+      add_colors
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#paletteadd_namesnames">
+<a class="md-nav__link" href="#Palette.Palette.add_names">
 <span class="md-ellipsis">
-      palette.add_names(names)
+      add_names
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#palettebit_length-int">
+<a class="md-nav__link" href="#Palette.Palette.bit_length">
 <span class="md-ellipsis">
-      palette.bit_length() -&gt; int
+      bit_length
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#paletteget_colorsindex-listint">
+<a class="md-nav__link" href="#Palette.Palette.get_colors">
 <span class="md-ellipsis">
-      palette.get_colors(index) -&gt; list[int]
+      get_colors
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#paletteget_indexname-int">
+<a class="md-nav__link" href="#Palette.Palette.get_index">
 <span class="md-ellipsis">
-      palette.get_index(name) -&gt; int
+      get_index
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#Palette.Palette.normalize_color">
+<span class="md-ellipsis">
+      normalize_color
     </span>
 </a>
 </li>
 </ul>
 </nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#Palette.get_color">
+<span class="md-ellipsis">
+      get_color
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#Palette.get_colors">
+<span class="md-ellipsis">
+      get_colors
+    </span>
+</a>
 </li>
 </ul>
 </nav>
@@ -457,55 +502,726 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1>Palette</h1>
-<h2 id="palette">Palette</h2>
-<h3 id="palettecolors-namesnone"><code>Palette(<em>colors</em>, <em>names</em>=None)</code></h3>
-<p>Create palette.</p>
-<dl>
-<dt><code>colors: dict[int|list[int], int | None]</code></dt>
-<dd>dictionary mapping color values to indices or None</dd>
-<dt><code>names: dict[str, int] | None = None</code></dt>
-<dd>optional dictionary mapping names to indices</dd>
-</dl>
-<h3 id="color-in-palette-bool"><code><em>color</em> in palette</code> -&gt; bool</h3>
-<p>Check wether <code>palette</code> contains the color or name.</p>
-<dl>
-<dt><code>color: str | int | tuple[int, ...] | float | None</code></dt>
-<dd>color or name</dd>
-</dl>
-<h3 id="palettecolor-int-none"><code>palette[<em>color</em>] -&gt; int | None</code></h3>
-<p>Gets index of color or name.</p>
-<dl>
-<dt><code>color: str | int | tuple[int, ...] | float | None</code></dt>
-<dd>color or name</dd>
-</dl>
-<h3 id="lenpalette-int"><code>len(palette) -&gt; int</code></h3>
-<p>Returns the number of colors contained in palette.</p>
-<h3 id="paletteadd_colorscolors"><code>palette.add_colors(<em>colors</em>)</code></h3>
-<p>Add additional color mappings to palette.</p>
-<dl>
-<dt><code>colors: dict[int|list[int], int | None]</code></dt>
-<dd>colors to add</dd>
-</dl>
-<h3 id="paletteadd_namesnames"><code>palette.add_names(<em>names</em>)</code></h3>
-<p>Add additional names to palette.</p>
-<dl>
-<dt><code>names: dict[str, int]</code></dt>
-<dd>names to add</dd>
-</dl>
-<h3 id="palettebit_length-int"><code>palette.bit_length() -&gt; int</code></h3>
-<p>Get the number of bits required to represent any index.</p>
-<h3 id="paletteget_colorsindex-listint"><code>palette.get_colors(<em>index</em>) -&gt; list[int]</code></h3>
-<p>Get all colors matching to given index or name.</p>
-<dl>
-<dt><code>index: str | int</code></dt>
-<dd>index or name</dd>
-</dl>
-<h3 id="paletteget_indexname-int"><code>palette.get_index(<em>name</em>) -&gt; int</code></h3>
-<p>Get index of name.</p>
-<dl>
-<dt><code>name: str</code></dt>
-<dd>name</dd>
-</dl>
+<div class="doc doc-object doc-module">
+<a id="Palette"></a>
+<div class="doc doc-contents first">
+<p>This module provides color palettes mapping colors and names to indices.</p>
+<p>Colors can be specified as:</p>
+<ul>
+<li>
+<p>The name of a global color (e.g., <code>black</code>, <code>white</code>, <code>grey-50</code>, <code>transparent</code>).</p>
+</li>
+<li>
+<p>The name of a color in a standard palette (e.g., <code>c64.red</code>, <code>spectrum.bright-blue</code>).</p>
+</li>
+<li>
+<p>An integer in the format 0xAARRGGBB (where <code>A</code> value 0 represents opaque).</p>
+</li>
+<li>
+<p>A tuple of RGB(A) values (where <code>A</code> value 0 represents transparent).</p>
+</li>
+</ul>
+<p>Returned color values are in the format 0xAARRGGBB.</p>
+<div class="doc doc-children">
+<div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="Palette.Palette">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code> <code class="highlight language-python"><span class="n">Palette</span><span class="p">(</span><span class="n">colors</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+</h2>
+<div class="doc doc-contents">
+<p>A palette mapping colors and names to indices.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>colors</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>A list or dictionary of colors mapping color values to indices.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="dict">dict</span>[<span title="int">int</span> | <span title="str">str</span>, <span title="int">int</span> | None] | <span title="list">list</span>[<span title="int">int</span> | <span title="str">str</span>]</code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>names</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>A list or dictionary mapping names to indices.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="dict">dict</span>[<span title="str">str</span>, <span title="int">int</span>] | <span title="list">list</span>[<span title="str">str</span>] | None</code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="doc doc-children">
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="Palette.Palette.__contains__">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="fm">__contains__</span><span class="p">(</span><span class="n">color</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Check if the palette contains the given color.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>color</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>color to check.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span> | <span title="int">int</span> | <span title="tuple">tuple</span>[<span title="int">int</span>, ...] | <span title="float">float</span> | None</code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RETURNS</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-returns-annotation">
+<code><span title="bool">bool</span></code>
+</span>
+</td>
+<td class="doc-returns-details">
+<div class="doc-md-description">
+<p>True if the color is in the palette, False otherwise.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="Palette.Palette.__copy__">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">__copy__</span><span class="p">()</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Return a deep copy of the palette.</p>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="Palette.Palette.__getitem__">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="fm">__getitem__</span><span class="p">(</span><span class="n">color</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Return the index of the given color or name.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>color</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>color or name to look up.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span> | <span title="int">int</span> | <span title="tuple">tuple</span>[<span title="int">int</span>, ...] | <span title="float">float</span> | None</code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RETURNS</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-returns-annotation">
+<code><span title="int">int</span> | None</code>
+</span>
+</td>
+<td class="doc-returns-details">
+<div class="doc-md-description">
+<p>The index of the color or name.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RAISES</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-raises-annotation">
+<code><span title="KeyError">KeyError</span></code>
+</span>
+</td>
+<td class="doc-raises-details">
+<div class="doc-md-description">
+<p>If the color or name is not found in the palette.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="Palette.Palette.__len__">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="fm">__len__</span><span class="p">()</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Return the number of colors in the palette.</p>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="Palette.Palette.add_colors">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">add_colors</span><span class="p">(</span><span class="n">colors</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Add multiple colors to the palette.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>colors</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>A list or dictionary of colors mapping color values to indices.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="dict">dict</span>[<span title="int">int</span> | <span title="str">str</span>, <span title="int">int</span> | None] | <span title="list">list</span>[<span title="int">int</span> | <span title="str">str</span>]</code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="Palette.Palette.add_names">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">add_names</span><span class="p">(</span><span class="n">names</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Add multiple names to the palette.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>names</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>A list or dictionary mapping names to indices.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="dict">dict</span>[<span title="str">str</span>, <span title="int">int</span>] | <span title="list">list</span>[<span title="str">str</span>]</code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="Palette.Palette.bit_length">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">bit_length</span><span class="p">()</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Return the number of bits needed to represent the highest index.</p>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="Palette.Palette.get_colors">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">get_colors</span><span class="p">(</span><span class="n">color</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Return all color values matching the given index or name.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>color</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>name or index to look up.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span> | <span title="int">int</span></code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RETURNS</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-returns-annotation">
+<code><span title="list">list</span>[<span title="int">int</span>]</code>
+</span>
+</td>
+<td class="doc-returns-details">
+<div class="doc-md-description">
+<p>List of matching color values.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RAISES</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-raises-annotation">
+<code><span title="KeyError">KeyError</span></code>
+</span>
+</td>
+<td class="doc-raises-details">
+<div class="doc-md-description">
+<p>If the name or index is not found in the palette.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="Palette.Palette.get_index">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">get_index</span><span class="p">(</span><span class="n">name</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Return the index of the given name.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>name</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>name to look up.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span></code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RETURNS</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-returns-annotation">
+<code><span title="int">int</span></code>
+</span>
+</td>
+<td class="doc-returns-details">
+<div class="doc-md-description">
+<p>The index of the name.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RAISES</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-raises-annotation">
+<code><span title="KeyError">KeyError</span></code>
+</span>
+</td>
+<td class="doc-raises-details">
+<div class="doc-md-description">
+<p>If the name is not found in the palette.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="Palette.Palette.normalize_color">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">normalize_color</span><span class="p">(</span><span class="n">color</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Normalize a color to the 0xAARRGGBB format.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>color</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>color to normalize.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="int">int</span> | <span title="tuple">tuple</span>[<span title="int">int</span>, ...] | <span title="float">float</span></code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RETURNS</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-returns-annotation">
+<code><span title="int">int</span></code>
+</span>
+</td>
+<td class="doc-returns-details">
+<div class="doc-md-description">
+<p>The normalized color.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RAISES</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-raises-annotation">
+<code><span title="RuntimeError">RuntimeError</span></code>
+</span>
+</td>
+<td class="doc-raises-details">
+<div class="doc-md-description">
+<p>If the color specification is invalid.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="Palette.get_color">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code> <code class="highlight language-python"><span class="n">get_color</span><span class="p">(</span><span class="n">color</span><span class="p">)</span></code>
+</h2>
+<div class="doc doc-contents">
+<p>Return the first color value matching the given color specification.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>color</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>color to look up.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span> | <span title="int">int</span> | <span title="tuple">tuple</span>[<span title="int">int</span>, ...] | <span title="float">float</span></code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RETURNS</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-returns-annotation">
+<code><span title="int">int</span></code>
+</span>
+</td>
+<td class="doc-returns-details">
+<div class="doc-md-description">
+<p>The first matching color value.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RAISES</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-raises-annotation">
+<code><span title="KeyError">KeyError</span></code>
+</span>
+</td>
+<td class="doc-raises-details">
+<div class="doc-md-description">
+<p>If the color name or palette is not found.</p>
+</div>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<span class="doc-raises-annotation">
+<code><span title="RuntimeError">RuntimeError</span></code>
+</span>
+</td>
+<td class="doc-raises-details">
+<div class="doc-md-description">
+<p>If the color specification is invalid.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="Palette.get_colors">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code> <code class="highlight language-python"><span class="n">get_colors</span><span class="p">(</span><span class="n">color</span><span class="p">)</span></code>
+</h2>
+<div class="doc doc-contents">
+<p>Return all color values matching the given color specification.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>color</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>color to look up.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span> | <span title="int">int</span> | <span title="tuple">tuple</span>[<span title="int">int</span>, ...] | <span title="float">float</span></code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RETURNS</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-returns-annotation">
+<code><span title="list">list</span>[<span title="int">int</span>]</code>
+</span>
+</td>
+<td class="doc-returns-details">
+<div class="doc-md-description">
+<p>List of matching color values.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RAISES</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-raises-annotation">
+<code><span title="KeyError">KeyError</span></code>
+</span>
+</td>
+<td class="doc-raises-details">
+<div class="doc-md-description">
+<p>If the color name or palette is not found.</p>
+</div>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<span class="doc-raises-annotation">
+<code><span title="RuntimeError">RuntimeError</span></code>
+</span>
+</td>
+<td class="doc-raises-details">
+<div class="doc-md-description">
+<p>If the color specification is invalid.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>

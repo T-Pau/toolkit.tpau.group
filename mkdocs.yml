@@ -8,6 +8,21 @@ plugins:
   - extra-sass
   - privacy
   - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ['Toolkit/python-packages']
+          options:
+            docstring_style: google
+            docstring_options:
+              ignore_init_summary: true
+            docstring_section_style: spacy
+            merge_init_into_class: true
+            show_docstring_attributes: true
+            show_docstring_functions: true
+            show_docstring_classes: true
+            show_source: false
+            show_symbol_type_heading: true
 theme:
   name: material
   custom_dir: overrides
@@ -47,6 +62,8 @@ nav:
       - Reference/Scripts/parallel-struct.md
     - Python Classes:
       - Reference/Classes/index.md
+      - Reference/Classes/AssemblerOutput.md
+      - Reference/Classes/AtomicOutput.md
       - Reference/Classes/Palette.md
   - Explanations:
     - Explanations/index.md
