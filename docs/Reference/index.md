@@ -20,4 +20,6 @@ title: Reference
 
 - [`AssemblerOUtput`](Classes/AssemblerOutput.md) - Create assembler source files in [Accelerate](https://accelerate.tpau.group/) format.
 - [`AtomicOutput`](Classes/AtomicOutput.md) - Create output file only if no errors occurred.
+- [`CharacterMapping`](Classes/CharacterMapping.md) - Map Unicode characters to native encoding.
 - [`Palette`](Classes/Palette.md) — Color palette.
+- [`Script`](Classes/Script.md) - Implements a standard script interface that is easy to integrate into a build system.

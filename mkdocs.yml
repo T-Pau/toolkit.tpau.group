@@ -64,7 +64,9 @@ nav:
       - Reference/Classes/index.md
       - Reference/Classes/AssemblerOutput.md
       - Reference/Classes/AtomicOutput.md
+      - Reference/Classes/CharacterMapping.md
       - Reference/Classes/Palette.md
+      - Reference/Classes/Script.md
   - Explanations:
     - Explanations/index.md
   - License.md
