@@ -64,9 +64,16 @@ nav:
       - Reference/Classes/index.md
       - Reference/Classes/AssemblerOutput.md
       - Reference/Classes/AtomicOutput.md
+      - Reference/Classes/Buffer.md
       - Reference/Classes/CharacterMapping.md
+      - Reference/Classes/Charset.md
+      - Reference/Classes/Command.md
+      - Reference/Classes/Dependencies.md
+      - Reference/Classes/FileReader.md
       - Reference/Classes/Palette.md
+      - Reference/Classes/PaletteImage.md
       - Reference/Classes/Script.md
+      - Reference/Classes/YAMLSpec.md
   - Explanations:
     - Explanations/index.md
   - License.md
