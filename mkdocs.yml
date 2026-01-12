@@ -23,6 +23,7 @@ plugins:
             show_docstring_classes: true
             show_source: false
             show_symbol_type_heading: true
+            show_attribute_values: false
 theme:
   name: material
   custom_dir: overrides
