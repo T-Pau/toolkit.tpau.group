@@ -24,7 +24,7 @@ title: Reference
 - [`CharacterMapping`](Classes/CharacterMapping.md) - Map Unicode characters to native encoding.
 - [`Charset`](Classes/Charset.md) - Character set.
 - [`Command`](Classes/Command.md) - Run external command.
-- [`Dependencies](Classes/Dependencies.md) - Create and check gcc style dependencies file
+- [`Dependencies`](Classes/Dependencies.md) - Create and check gcc style dependencies file
 - [`FileReader`](Classes/FileReader.md) - Read file line by line with error reporting and preprocessor.
 - [`Palette`](Classes/Palette.md) — Color palette.
 - [`PaletteImage`](Classes/PaletteImage.md) - Image converted to color indices.
