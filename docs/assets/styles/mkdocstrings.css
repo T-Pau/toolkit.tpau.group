@@ -1,0 +1,11 @@
+code.doc-symbol-attribute::after {
+  content: "attribute";
+}
+
+code.doc-symbol-function::after {
+  content: "function";
+}
+
+code.doc-symbol-method::after {
+  content: "method";
+}

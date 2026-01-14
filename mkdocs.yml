@@ -4,6 +4,8 @@ repo_url: https://github.com/T-Pau/Toolkit
 copyright: ©2025 Dieter Baron
 extra:
   generator: false
+extra_css:
+  - assets/styles/mkdocstrings.css
 plugins:
   - extra-sass
   - privacy
