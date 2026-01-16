@@ -28,5 +28,6 @@ title: Reference
 - [`FileReader`](Classes/FileReader.md) - Read file line by line with error reporting and preprocessor.
 - [`Palette`](Classes/Palette.md) — Color palette.
 - [`PaletteImage`](Classes/PaletteImage.md) - Image converted to color indices.
+- [`RunlengthEncoder`](Classes/RunlengthEncoder.md) - run length encoder with skip support.
 - [`Script`](Classes/Script.md) - Implements a standard script interface that is easy to integrate into a build system.
 - [`YAMLSpec`](Classes/YAMLSpec.md) - Decode and access specification data from YAML.

@@ -26,6 +26,7 @@ plugins:
             show_source: false
             show_symbol_type_heading: true
             show_attribute_values: false
+            inherited_members: true
 theme:
   name: material
   custom_dir: overrides
@@ -75,6 +76,7 @@ nav:
       - Reference/Classes/FileReader.md
       - Reference/Classes/Palette.md
       - Reference/Classes/PaletteImage.md
+      - Reference/Classes/RunlengthEncoder.md
       - Reference/Classes/Script.md
       - Reference/Classes/YAMLSpec.md
   - Explanations:
