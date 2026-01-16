@@ -2,126 +2,130 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://toolkit.tpau.group/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/License/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Explanations/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/How-To-Guides/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Classes/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Classes/AssemblerOutput/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Classes/AtomicOutput/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Classes/Buffer/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Classes/CharacterMapping/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Classes/Charset/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Classes/Command/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Classes/Dependencies/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Classes/FileReader/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Classes/Palette/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Classes/PaletteImage/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
+    </url>
+    <url>
+         <loc>https://toolkit.tpau.group/Reference/Classes/RunlengthEncoder/</loc>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Classes/Script/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Classes/YAMLSpec/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Scripts/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Scripts/convert-bitmaps/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Scripts/convert-characters/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Scripts/convert-charset/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Scripts/convert-image/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Scripts/convert-markdown/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Scripts/convert-screens/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Scripts/convert-sprites/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Scripts/create-disk/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Scripts/create-zip/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Scripts/encode-colors/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Reference/Scripts/parallel-struct/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
     <url>
          <loc>https://toolkit.tpau.group/Tutorials/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-16</lastmod>
     </url>
 </urlset>
