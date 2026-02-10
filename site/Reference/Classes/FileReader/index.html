@@ -6,8 +6,8 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://toolkit.tpau.group/Reference/Classes/FileReader/" rel="canonical">
-<link href="../Dependencies/" rel="prev"/>
-<link href="../Palette/" rel="next"/>
+<link href="../FilePositionException/" rel="prev"/>
+<link href="../MessageHandler/" rel="next"/>
 <link href="../../../assets/images/favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.3" name="generator"/>
 <title>FileReader -  </title>
@@ -329,9 +329,25 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../BASICOutput/">
+<span class="md-ellipsis">
+    BASICOutput
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../Buffer/">
 <span class="md-ellipsis">
     Buffer
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../CharacterImage/">
+<span class="md-ellipsis">
+    CharacterImage
     
   </span>
 </a>
@@ -364,6 +380,22 @@
 <a class="md-nav__link" href="../Dependencies/">
 <span class="md-ellipsis">
     Dependencies
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Disk/">
+<span class="md-ellipsis">
+    Disk
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../FilePositionException/">
+<span class="md-ellipsis">
+    FilePositionException
     
   </span>
 </a>
@@ -405,45 +437,41 @@
 <nav aria-label="FileReader" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#FileReader.FileReader.error">
-<span class="md-ellipsis">
-      error
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#FileReader.FileReader.fail">
-<span class="md-ellipsis">
-      fail
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#FileReader.FileReader.get_line">
 <span class="md-ellipsis">
       get_line
     </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#FileReader.FileReader.message">
-<span class="md-ellipsis">
-      message
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#FileReader.FileReader.warning">
-<span class="md-ellipsis">
-      warning
-    </span>
-</a>
-</li>
 </ul>
 </nav>
 </li>
 </ul>
 </nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../MessageHandler/">
+<span class="md-ellipsis">
+    MessageHandler
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../MessageHandlerCollect/">
+<span class="md-ellipsis">
+    MessageHandlerCollect
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../MessageHandlerFile/">
+<span class="md-ellipsis">
+    MessageHandlerFile
+    
+  </span>
+</a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../Palette/">
@@ -540,9 +568,11 @@
 <div class="doc doc-children">
 <div class="doc doc-object doc-class">
 <h2 class="doc doc-heading" id="FileReader.FileReader">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code> <code class="highlight language-python"><span class="n">FileReader</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">preprocess</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">defines</span><span class="o">=</span><span class="p">{})</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code> <code class="highlight language-python"><span class="n">FileReader</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">preprocess</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">defines</span><span class="o">=</span><span class="p">{},</span> <span class="n">message_handler</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 </h2>
 <div class="doc doc-contents">
+<p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" href="../MessageHandler/#MessageHandler.MessageHandler" title="              MessageHandler() (MessageHandler.MessageHandler)">MessageHandler</a></code></p>
 <p>Read file line by line with error reporting and preprocessor.</p>
 <table>
 <thead>
@@ -608,51 +638,29 @@
 </p>
 </td>
 </tr>
-</tbody>
-</table>
-<div class="doc doc-children">
-<div class="doc doc-object doc-function">
-<h3 class="doc doc-heading" id="FileReader.FileReader.error">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">error</span><span class="p">(</span><span class="n">message</span><span class="p">)</span></code>
-</h3>
-<div class="doc doc-contents">
-<p>Print error message and mark reader as failed.</p>
-<table>
-<thead>
-<tr>
-<th><span class="doc-section-title">PARAMETER</span></th>
-<th><span>DESCRIPTION</span></th>
-</tr>
-</thead>
-<tbody>
 <tr class="doc-section-item">
 <td>
-<code>message</code>
+<code>message_handler</code>
 </td>
 <td class="doc-param-details">
 <div class="doc-md-description">
-<p>error message or exception to print</p>
+<p>message handler to use for error reporting</p>
 </div>
 <p>
 <span class="doc-param-annotation">
 <b>TYPE:</b>
-<code><span title="str">str</span> | <span title="BaseException">BaseException</span></code>
+<code><a class="autorefs autorefs-internal" href="../MessageHandler/#MessageHandler.MessageHandler" title="              MessageHandler() (MessageHandler.MessageHandler)">MessageHandler</a> | None</code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
 </span>
 </p>
 </td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div class="doc doc-object doc-function">
-<h3 class="doc doc-heading" id="FileReader.FileReader.fail">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">fail</span><span class="p">()</span></code>
-</h3>
-<div class="doc doc-contents">
-<p>Mark reader as failed.</p>
-</div>
-</div>
+<div class="doc doc-children">
 <div class="doc doc-object doc-function">
 <h3 class="doc doc-heading" id="FileReader.FileReader.get_line">
 <code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">get_line</span><span class="p">()</span></code>
@@ -677,74 +685,6 @@
 <div class="doc-md-description">
 <p>next line from file, or None if at end of file</p>
 </div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="doc doc-object doc-function">
-<h3 class="doc doc-heading" id="FileReader.FileReader.message">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">message</span><span class="p">(</span><span class="n">message</span><span class="p">)</span></code>
-</h3>
-<div class="doc doc-contents">
-<p>Print message to standard error, prefixed with current file position.</p>
-<table>
-<thead>
-<tr>
-<th><span class="doc-section-title">PARAMETER</span></th>
-<th><span>DESCRIPTION</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="doc-section-item">
-<td>
-<code>message</code>
-</td>
-<td class="doc-param-details">
-<div class="doc-md-description">
-<p>message to print</p>
-</div>
-<p>
-<span class="doc-param-annotation">
-<b>TYPE:</b>
-<code><span title="str">str</span></code>
-</span>
-</p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="doc doc-object doc-function">
-<h3 class="doc doc-heading" id="FileReader.FileReader.warning">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">warning</span><span class="p">(</span><span class="n">message</span><span class="p">)</span></code>
-</h3>
-<div class="doc doc-contents">
-<p>Print warning message.</p>
-<table>
-<thead>
-<tr>
-<th><span class="doc-section-title">PARAMETER</span></th>
-<th><span>DESCRIPTION</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="doc-section-item">
-<td>
-<code>message</code>
-</td>
-<td class="doc-param-details">
-<div class="doc-md-description">
-<p>warning message to print</p>
-</div>
-<p>
-<span class="doc-param-annotation">
-<b>TYPE:</b>
-<code><span title="str">str</span></code>
-</span>
-</p>
 </td>
 </tr>
 </tbody>

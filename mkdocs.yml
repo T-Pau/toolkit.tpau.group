@@ -68,12 +68,19 @@ nav:
       - Reference/Classes/index.md
       - Reference/Classes/AssemblerOutput.md
       - Reference/Classes/AtomicOutput.md
+      - Reference/Classes/BASICOutput.md
       - Reference/Classes/Buffer.md
+      - Reference/Classes/CharacterImage.md
       - Reference/Classes/CharacterMapping.md
       - Reference/Classes/Charset.md
       - Reference/Classes/Command.md
       - Reference/Classes/Dependencies.md
+      - Reference/Classes/Disk.md
+      - Reference/Classes/FilePositionException.md
       - Reference/Classes/FileReader.md
+      - Reference/Classes/MessageHandler.md
+      - Reference/Classes/MessageHandlerCollect.md
+      - Reference/Classes/MessageHandlerFile.md
       - Reference/Classes/Palette.md
       - Reference/Classes/PaletteImage.md
       - Reference/Classes/RunlengthEncoder.md

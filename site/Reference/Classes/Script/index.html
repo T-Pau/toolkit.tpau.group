@@ -329,9 +329,25 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../BASICOutput/">
+<span class="md-ellipsis">
+    BASICOutput
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../Buffer/">
 <span class="md-ellipsis">
     Buffer
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../CharacterImage/">
+<span class="md-ellipsis">
+    CharacterImage
     
   </span>
 </a>
@@ -369,9 +385,49 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../Disk/">
+<span class="md-ellipsis">
+    Disk
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../FilePositionException/">
+<span class="md-ellipsis">
+    FilePositionException
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../FileReader/">
 <span class="md-ellipsis">
     FileReader
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../MessageHandler/">
+<span class="md-ellipsis">
+    MessageHandler
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../MessageHandlerCollect/">
+<span class="md-ellipsis">
+    MessageHandlerCollect
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../MessageHandlerFile/">
+<span class="md-ellipsis">
+    MessageHandlerFile
     
   </span>
 </a>
@@ -444,9 +500,37 @@
 <nav aria-label="Script" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#Script.Script.assembler">
+<span class="md-ellipsis">
+      assembler
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#Script.Script.dependencies">
+<span class="md-ellipsis">
+      dependencies
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#Script.Script.file_reader">
+<span class="md-ellipsis">
+      file_reader
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#Script.Script.add_dependency">
 <span class="md-ellipsis">
       add_dependency
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#Script.Script.capture_exceptions">
+<span class="md-ellipsis">
+      capture_exceptions
     </span>
 </a>
 </li>
@@ -472,9 +556,23 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#Script.Script.error_from_exception">
+<span class="md-ellipsis">
+      error_from_exception
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#Script.Script.execute_sub">
 <span class="md-ellipsis">
       execute_sub
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#Script.Script.fail">
+<span class="md-ellipsis">
+      fail
     </span>
 </a>
 </li>
@@ -486,6 +584,13 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#Script.Script.find_optional_file">
+<span class="md-ellipsis">
+      find_optional_file
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#Script.Script.get_dynamic_dependencies">
 <span class="md-ellipsis">
       get_dynamic_dependencies
@@ -493,9 +598,30 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#Script.Script.has_failed">
+<span class="md-ellipsis">
+      has_failed
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#Script.Script.info">
+<span class="md-ellipsis">
+      info
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#Script.Script.input_filename">
 <span class="md-ellipsis">
       input_filename
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#Script.Script.is_ok">
+<span class="md-ellipsis">
+      is_ok
     </span>
 </a>
 </li>
@@ -531,6 +657,13 @@
 <a class="md-nav__link" href="#Script.Script.prepare">
 <span class="md-ellipsis">
       prepare
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#Script.Script.reset">
+<span class="md-ellipsis">
+      reset
     </span>
 </a>
 </li>
@@ -807,6 +940,8 @@
 <code class="doc-symbol doc-symbol-heading doc-symbol-class"></code> <code class="highlight language-python"><span class="n">Script</span><span class="p">(</span><span class="n">description</span><span class="p">,</span> <span class="o">*</span><span class="n">options</span><span class="p">)</span></code>
 </h2>
 <div class="doc doc-contents">
+<p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" href="../MessageHandler/#MessageHandler.MessageHandler" title="              MessageHandler() (MessageHandler.MessageHandler)">MessageHandler</a></code></p>
 <p>Base class for scripts with standard interface.</p>
 <table>
 <thead>
@@ -855,6 +990,105 @@
 </tbody>
 </table>
 <div class="doc doc-children">
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="Script.Script.assembler">
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code> <code class="highlight language-python"><span class="n">assembler</span></code>
+<span class="doc doc-labels">
+<small class="doc doc-label doc-label-property"><code>property</code></small>
+</span>
+</h3>
+<div class="doc doc-contents">
+<p>Get assembler output object.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RETURNS</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-returns-annotation">
+<code><a class="autorefs autorefs-internal" href="../AssemblerOutput/#AssemblerOutput.AssemblerOutput" title="              AssemblerOutput(file) (AssemblerOutput.AssemblerOutput)">AssemblerOutput</a></code>
+</span>
+</td>
+<td class="doc-returns-details">
+<div class="doc-md-description">
+<p>The assembler output object.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="Script.Script.dependencies">
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code> <code class="highlight language-python"><span class="n">dependencies</span></code>
+<span class="doc doc-labels">
+<small class="doc doc-label doc-label-property"><code>property</code></small>
+</span>
+</h3>
+<div class="doc doc-contents">
+<p>Get dependencies object.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RETURNS</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-returns-annotation">
+<code><a class="autorefs autorefs-internal" href="../Dependencies/#Dependencies.Dependencies" title="              Dependencies(filename, target) (Dependencies.Dependencies)">Dependencies</a></code>
+</span>
+</td>
+<td class="doc-returns-details">
+<div class="doc-md-description">
+<p>The dependencies object.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h3 class="doc doc-heading" id="Script.Script.file_reader">
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code> <code class="highlight language-python"><span class="n">file_reader</span></code>
+<span class="doc doc-labels">
+<small class="doc doc-label doc-label-property"><code>property</code></small>
+</span>
+</h3>
+<div class="doc doc-contents">
+<p>Get file reader object.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RETURNS</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-returns-annotation">
+<code><a class="autorefs autorefs-internal" href="../FileReader/#FileReader.FileReader" title="              FileReader(filename, preprocess=False, defines={}, message_handler=None) (FileReader.FileReader)">FileReader</a></code>
+</span>
+</td>
+<td class="doc-returns-details">
+<div class="doc-md-description">
+<p>The file reader object.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <div class="doc doc-object doc-function">
 <h3 class="doc doc-heading" id="Script.Script.add_dependency">
 <code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">add_dependency</span><span class="p">(</span><span class="n">file</span><span class="p">)</span></code>
@@ -884,6 +1118,63 @@
 <code><span title="str">str</span></code>
 </span>
 </p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="Script.Script.capture_exceptions">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">capture_exceptions</span><span class="p">(</span><span class="n">code</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Run code and capture any exceptions as error messages.</p>
+<p>Exceptions with empty messages are not reported as error messages but still mark the handler as failed.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>code</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The function to run.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="typing.Callable">Callable</span>[[], None]</code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RETURNS</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-returns-annotation">
+<code><span title="bool">bool</span></code>
+</span>
+</td>
+<td class="doc-returns-details">
+<div class="doc-md-description">
+<p>True if code ran without exceptions, False otherwise.</p>
+</div>
 </td>
 </tr>
 </tbody>
@@ -954,11 +1245,10 @@
 </div>
 <div class="doc doc-object doc-function">
 <h3 class="doc doc-heading" id="Script.Script.error">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">error</span><span class="p">(</span><span class="n">message</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">error</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">position</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">position_end</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 </h3>
 <div class="doc doc-contents">
-<p>Report an error and mark script as failed.</p>
-<p>This method is meant to be called by subclasses.</p>
+<p>Report an error and mark current script as failed.</p>
 <table>
 <thead>
 <tr>
@@ -983,6 +1273,121 @@
 </p>
 </td>
 </tr>
+<tr class="doc-section-item">
+<td>
+<code>file</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The file where the error occurred.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span> | None</code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>position</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The position in the file where the error occurred.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="typing.Any">Any</span></code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>position_end</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The end position in the file where the error occurred.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="typing.Any">Any</span></code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="Script.Script.error_from_exception">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">error_from_exception</span><span class="p">(</span><span class="n">exception</span><span class="p">,</span> <span class="n">omit_empty</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Print message from exception.</p>
+<p>If the exception is a FilePositionException, the file and position information will be used.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>exception</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The exception to print the message from.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="Exception">Exception</span></code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>omit_empty</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>Whether to omit messages with empty text. Handler will still be marked as failed.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="bool">bool</span></code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>False</code>
+</span>
+</p>
+</td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -997,8 +1402,16 @@
 </div>
 </div>
 <div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="Script.Script.fail">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">fail</span><span class="p">()</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Mark the message handler as failed.</p>
+</div>
+</div>
+<div class="doc doc-object doc-function">
 <h3 class="doc doc-heading" id="Script.Script.find_file">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">find_file</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">optional</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">find_file</span><span class="p">(</span><span class="n">file</span><span class="p">)</span></code>
 </h3>
 <div class="doc doc-contents">
 <p>Find a file, searching the directory of the input file and include directories.</p>
@@ -1027,22 +1440,81 @@
 </p>
 </td>
 </tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RETURNS</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
 <tr class="doc-section-item">
 <td>
-<code>optional</code>
+<span class="doc-returns-annotation">
+<code><span title="str">str</span></code>
+</span>
+</td>
+<td class="doc-returns-details">
+<div class="doc-md-description">
+<p>The name of the found file.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RAISES</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-raises-annotation">
+<code><span title="RuntimeError">RuntimeError</span></code>
+</span>
+</td>
+<td class="doc-raises-details">
+<div class="doc-md-description">
+<p>If the file is not found.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="Script.Script.find_optional_file">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">find_optional_file</span><span class="p">(</span><span class="n">file</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Find an optional file, searching the directory of the input file and include directories.</p>
+<p>This method is meant to be called by subclasses.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>file</code>
 </td>
 <td class="doc-param-details">
 <div class="doc-md-description">
-<p>If true, return None if the file is not found.</p>
+<p>Name of the file to find.</p>
 </div>
 <p>
 <span class="doc-param-annotation">
 <b>TYPE:</b>
-<code><span title="bool">bool</span></code>
-</span>
-<span class="doc-param-default">
-<b>DEFAULT:</b>
-<code>False</code>
+<code><span title="str">str</span></code>
 </span>
 </p>
 </td>
@@ -1066,28 +1538,6 @@
 <td class="doc-returns-details">
 <div class="doc-md-description">
 <p>The name of the found file, or None if optional and the file is not found.</p>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th><span class="doc-section-title">RAISES</span></th>
-<th><span>DESCRIPTION</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="doc-section-item">
-<td>
-<span class="doc-raises-annotation">
-<code><span title="RuntimeError">RuntimeError</span></code>
-</span>
-</td>
-<td class="doc-raises-details">
-<div class="doc-md-description">
-<p>If a non-optional file is not found.</p>
 </div>
 </td>
 </tr>
@@ -1127,6 +1577,130 @@
 </div>
 </div>
 <div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="Script.Script.has_failed">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">has_failed</span><span class="p">()</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Check if the message handler has failed (errors reported).</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RETURNS</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-returns-annotation">
+<code><span title="bool">bool</span></code>
+</span>
+</td>
+<td class="doc-returns-details">
+<div class="doc-md-description">
+<p>True if the message handler has failed, False otherwise.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="Script.Script.info">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">info</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">position</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">position_end</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Print informational message using current script.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>message</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>Informational message.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span></code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>file</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The file where the message occurred.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span> | None</code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>position</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The position in the file where the message occurred.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="typing.Any">Any</span></code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>position_end</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The end position in the file where the message occurred.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="typing.Any">Any</span></code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
 <h3 class="doc doc-heading" id="Script.Script.input_filename">
 <code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">input_filename</span><span class="p">()</span></code>
 </h3>
@@ -1150,6 +1724,36 @@
 <td class="doc-returns-details">
 <div class="doc-md-description">
 <p>The input filename, or None if no input file is used.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="Script.Script.is_ok">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">is_ok</span><span class="p">()</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Check if the message handler is ok (no errors reported).</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RETURNS</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-returns-annotation">
+<code><span title="bool">bool</span></code>
+</span>
+</td>
+<td class="doc-returns-details">
+<div class="doc-md-description">
+<p>True if the message handler is ok, False otherwise.</p>
 </div>
 </td>
 </tr>
@@ -1291,6 +1895,14 @@
 </div>
 </div>
 <div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="Script.Script.reset">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">reset</span><span class="p">()</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Reset the message handler to ok.</p>
+</div>
+</div>
+<div class="doc doc-object doc-function">
 <h3 class="doc doc-heading" id="Script.Script.run">
 <code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">run</span><span class="p">()</span></code>
 </h3>
@@ -1386,10 +1998,10 @@
 </div>
 <div class="doc doc-object doc-function">
 <h3 class="doc doc-heading" id="Script.Script.warning">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">warning</span><span class="p">(</span><span class="n">message</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">warning</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">position</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">position_end</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 </h3>
 <div class="doc doc-contents">
-<p>Print warning.</p>
+<p>Print warning using current script.</p>
 <table>
 <thead>
 <tr>
@@ -1410,6 +2022,66 @@
 <span class="doc-param-annotation">
 <b>TYPE:</b>
 <code><span title="str">str</span></code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>file</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The file where the warning occurred.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="str">str</span> | None</code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>position</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The position in the file where the warning occurred.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="typing.Any">Any</span></code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>position_end</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>The end position in the file where the warning occurred.</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="typing.Any">Any</span></code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
 </span>
 </p>
 </td>
