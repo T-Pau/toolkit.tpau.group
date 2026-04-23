@@ -394,6 +394,20 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#CharacterImage.CharacterImage.set">
+<span class="md-ellipsis">
+      set
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#CharacterImage.CharacterImage.set_xy">
+<span class="md-ellipsis">
+      set_xy
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -575,7 +589,7 @@
 <div class="doc doc-children">
 <div class="doc doc-object doc-class">
 <h2 class="doc doc-heading" id="CharacterImage.CharacterImage">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code> <code class="highlight language-python"><span class="n">CharacterImage</span><span class="p">(</span><span class="n">character_width</span><span class="p">,</span> <span class="n">character_height</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">image</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">additional_palette</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">pixel_size</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code> <code class="highlight language-python"><span class="n">CharacterImage</span><span class="p">(</span><span class="n">character_width</span><span class="p">,</span> <span class="n">character_height</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">image</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">additional_palette</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">pixel_size</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 </h2>
 <div class="doc doc-contents">
 <p>Access characters from an image.</p>
@@ -651,6 +665,46 @@
 <span class="doc-param-annotation">
 <b>TYPE:</b>
 <code><span title="PIL.Image.Image">Image</span> | None</code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>width</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>width of image in characters</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="int">int</span> | None</code>
+</span>
+<span class="doc-param-default">
+<b>DEFAULT:</b>
+<code>None</code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>height</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>height of image in characters</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="int">int</span> | None</code>
 </span>
 <span class="doc-param-default">
 <b>DEFAULT:</b>
@@ -812,6 +866,166 @@
 </table>
 <p>Returns:
     bytes of character, or None if character is a hole</p>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="CharacterImage.CharacterImage.set">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="nb">set</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Set character at given index.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>index</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>index of character to set</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="int">int</span></code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>value</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>bytes of character</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="bytes">bytes</span></code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RAISES</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-raises-annotation">
+<code><span title="ValueError">ValueError</span></code>
+</span>
+</td>
+<td class="doc-raises-details">
+<div class="doc-md-description">
+<p>if index is out of bounds or value has invalid size</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h3 class="doc doc-heading" id="CharacterImage.CharacterImage.set_xy">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <code class="highlight language-python"><span class="n">set_xy</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Set character at given coordinates.</p>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">PARAMETER</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<code>x</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>x coordinate of character to set</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="int">int</span></code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>y</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>y coordinate of character to set</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="int">int</span></code>
+</span>
+</p>
+</td>
+</tr>
+<tr class="doc-section-item">
+<td>
+<code>value</code>
+</td>
+<td class="doc-param-details">
+<div class="doc-md-description">
+<p>bytes of character</p>
+</div>
+<p>
+<span class="doc-param-annotation">
+<b>TYPE:</b>
+<code><span title="bytes">bytes</span></code>
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><span class="doc-section-title">RAISES</span></th>
+<th><span>DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="doc-section-item">
+<td>
+<span class="doc-raises-annotation">
+<code><span title="ValueError">ValueError</span></code>
+</span>
+</td>
+<td class="doc-raises-details">
+<div class="doc-md-description">
+<p>if coordinates are out of bounds or value has invalid size</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
