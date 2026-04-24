@@ -20,7 +20,7 @@ title: Reference
 
 - [`AssemblerOutput`](Classes/AssemblerOutput.md) - Create assembler source files in [Accelerate](https://accelerate.tpau.group/) format.
 - [`AtomicOutput`](Classes/AtomicOutput.md) - Create output file only if no errors occurred.
-- [`BASICOutput.md`](Classes/BASICOutput.md) - Create BASIC program.
+- [`BASICOutput`](Classes/BASICOutput.md) - Create BASIC program.
 - [`Buffer`](Classes/Buffer.md) - Create binary data incrementally.
 - [`CharacterImage`](Classes/CharacterImage.md) - Convert image to characters.
 - [`CharacterMapping`](Classes/CharacterMapping.md) - Map Unicode characters to native encoding.
@@ -28,7 +28,7 @@ title: Reference
 - [`Command`](Classes/Command.md) - Run external command.
 - [`Dependencies`](Classes/Dependencies.md) - Create and check gcc style dependencies file.
 - [`Disk`](Classes/Disk.md) - Read and write disk images.
-- [`FilePositionException](Classes/FilePositionException.md) - Exception that includes file position information.
+- [`FilePositionException`](Classes/FilePositionException.md) - Exception that includes file position information.
 - [`FileReader`](Classes/FileReader.md) - Read file line by line with error reporting and preprocessor.
 - [`MessageHandler`](Classes/MessageHandler.md) - Base class for message handling.
 - [`MessageHandlerCollect`](Classes/MessageHandlerCollect.md) - Collect messages in list.
