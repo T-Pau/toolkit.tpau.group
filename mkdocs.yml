@@ -43,14 +43,14 @@ theme:
     - navigation.indexes 
     - toc.integrate 
 markdown_extensions:
-- pymdownx.highlight:
-    anchor_linenums: true
-    line_spans: __span
-    pygments_lang_class: true
-- pymdownx.inlinehilite
-- pymdownx.snippets
-- pymdownx.superfences
-- def_list: {}
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - def_list
 nav:
   - index.md
   - Tutorials:

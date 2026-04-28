@@ -22,7 +22,7 @@ It generates an assembler source file containing all the created objects.
 `-h`, `--help`
 :   Show help message and exit.
 
-<code>-M <em>file</em><code>
+<code>-M <em>file</em></code>
 : Write gcc-style dependency information to `file`.
 
 <code>-o <em>file</em></code>

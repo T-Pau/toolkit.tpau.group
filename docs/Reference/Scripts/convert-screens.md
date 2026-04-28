@@ -25,8 +25,8 @@ It generates an assembler source file containing all the created objects.
 <code>-I <em>directory</em></code>
 :   Search for included files in `directory`. Can be given multiple times.
 
-<code>-M <em>file</em><code>
-: Write gcc-style dependency information to `file`.
+<code>-M <em>file</em></code>
+:   Write gcc-style dependency information to `file`.
 
 <code>-o <em>file</em></code>
 :   Write generated assembly code to `file`.
@@ -34,7 +34,7 @@ It generates an assembler source file containing all the created objects.
 <code>-s <em>section</em></code>, <code>--section <em>section</em></code>
 :   Put generated objects in section `section`.
 
-<code>-D <em>defines>
+<code>-D <em>defines</em></code>
 :   Specify defines.
 
 ## Text File

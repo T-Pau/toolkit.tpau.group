@@ -27,7 +27,7 @@ It generates an assembler source file containing all the created objects.
 <code>-I <em>directory</em></code>
 :   Search for included files in `directory`. Can be given multiple times.
 
-<code>-M <em>file</em><code>
+<code>-M <em>file</em></code>
 : Write gcc-style dependency information to `file`.
 
 <code>-o <em>file</em></code>
