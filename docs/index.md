@@ -17,7 +17,7 @@ While the scripts creating assembly code, the provided assembler routines, and t
 
 Include Toolkit as a submodule in your Git repository:
 
-```sh
+``` sh
 git submodule add https://github.com/T-Pau/Toolkit Toolkit
 ```
 

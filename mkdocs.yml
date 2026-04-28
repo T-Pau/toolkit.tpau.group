@@ -6,6 +6,7 @@ extra:
   generator: false
 extra_css:
   - assets/styles/mkdocstrings.css
+  - assets/styles/style.css
 plugins:
   - extra-sass
   - privacy
@@ -32,7 +33,7 @@ theme:
   custom_dir: overrides
   font: false
   # logo: assets/images/logo.svg
-  logo: assets/images/tpau.svg
+  logo: assets/images/icon.svg
   favicon: assets/images/favicon.ico
   icon:
     repo: fontawesome/brands/github   
@@ -42,7 +43,14 @@ theme:
     - navigation.indexes 
     - toc.integrate 
 markdown_extensions:
-  def_list: {}
+- pymdownx.highlight:
+    anchor_linenums: true
+    line_spans: __span
+    pygments_lang_class: true
+- pymdownx.inlinehilite
+- pymdownx.snippets
+- pymdownx.superfences
+- def_list: {}
 nav:
   - index.md
   - Tutorials:
