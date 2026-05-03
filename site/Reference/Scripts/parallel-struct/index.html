@@ -1820,12 +1820,16 @@
 <dd>(default: <code>yes</code>)</dd>
 <dt><code>prefix </em>string</em></code></dt>
 <dd>Prefix for object names. (default: empty)</dd>
+<dt><code>row_length <em>number</em></code></dt>
+<dd>Number of entries per row. (default: none)</dd>
 </dl>
 <h3 id="fields">Fields</h3>
 <p>The fields of the structures are defined in the <code>fields</code> section of the structure file.</p>
 <dl>
 <dt><code>default_value <em>value</em></code></dt>
 <dd>Value to use if not specified in struct. Values of other fields can be used with the syntax <code>{{<em>field</em>}}</code>. Due to YAML syntax rules, if it starts with a field reference, the default value has to be enclosed in <code>"</code>. (default: none)</dd>
+<dt><code>empty_value <em>value</em></code></dt>
+<dd>Value to use for empty entries to pad rows. If not specified, the default value is used. (default: none)</dd>
 <dt><code>encoding <em>encoding</em></code></dt>
 <dd>Encoding used for string values. (default: <code>default_string_encoding</code> from global settings)</dd>
 <dt><code>length <em>number</em></code></dt>
@@ -1849,6 +1853,8 @@
 </dl>
 <h3 id="structures">Structures</h3>
 <p>The actual structures are listed in the <code>structs</code> section of the structure file.</p>
+<p>If <code>row_length</code> is specified in the global settings, each entry in the list corresponds to one row. If a row has fewer entries than <code>row_length</code>, the remaining entries will be filled with empty structs.</p>
+<p>Each row is either a list of structs, or a map, which can provide default values for fields in the struct; the structs themselves are in the <code>structs</code> field of the map.</p>
 
 
 

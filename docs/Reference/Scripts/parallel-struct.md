@@ -49,12 +49,18 @@ Global settings are specified in the `settings` section of the structure file.
 <code>prefix </em>string</em></code>
 : Prefix for object names. (default: empty)
 
+<code>row_length <em>number</em></code>
+: Number of entries per row. (default: none)
+
 ### Fields
 
 The fields of the structures are defined in the `fields` section of the structure file.
 
 <code>default_value <em>value</em></code>
 : Value to use if not specified in struct. Values of other fields can be used with the syntax <code>{{<em>field</em>}}</code>. Due to YAML syntax rules, if it starts with a field reference, the default value has to be enclosed in `"`. (default: none)
+
+<code>empty_value <em>value</em></code>
+: Value to use for empty entries to pad rows. If not specified, the default value is used. (default: none)
 
 <code>encoding <em>encoding</em></code>
 : Encoding used for string values. (default: `default_string_encoding` from global settings)
@@ -86,3 +92,7 @@ The fields of the structures are defined in the `fields` section of the structur
 ### Structures
 
 The actual structures are listed in the `structs` section of the structure file.
+
+If `row_length` is specified in the global settings, each entry in the list corresponds to one row. If a row has fewer entries than `row_length`, the remaining entries will be filled with empty structs.
+
+Each row is either a list of structs, or a map, which can provide default values for fields in the struct; the structs themselves are in the `structs` field of the map.

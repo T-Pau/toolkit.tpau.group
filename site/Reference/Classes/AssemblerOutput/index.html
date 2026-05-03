@@ -2564,7 +2564,7 @@
             </td>
             <td class="doc-raises-details">
               <div class="doc-md-description">
-                <p>If both prefix and name are None.</p>
+                <p>If both prefix and name are None or empty.</p>
               </div>
             </td>
           </tr>
@@ -3205,7 +3205,7 @@
               <p>
                   <span class="doc-param-annotation">
                     <b>TYPE:</b>
-                      <code><span title="str">str</span></code>
+                      <code><span title="str">str</span> | None</code>
                   </span>
               </p>
             </td>
@@ -3307,6 +3307,18 @@
             <td class="doc-raises-details">
               <div class="doc-md-description">
                 <p>If inside an object.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+              <span class="doc-raises-annotation">
+                  <code><span title="ValueError">ValueError</span></code>
+              </span>
+            </td>
+            <td class="doc-raises-details">
+              <div class="doc-md-description">
+                <p>If name is empty and include_index is True.</p>
               </div>
             </td>
           </tr>
